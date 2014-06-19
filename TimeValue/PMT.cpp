@@ -3,7 +3,7 @@
 
 void PrintUsage(char *name)
 {
-	cout << name << " <rate> <nper> <pmt> [pv] [type]" << endl;
+	cout << name << " <rate> <nper> <pv> [fv] [type]" << endl;
 }
 
 int main(int argc, char *argv[])
