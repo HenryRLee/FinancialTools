@@ -20,11 +20,11 @@ int main(int argc, char *argv[])
 			fv = atof(argv[4]);
 
 		if (argc >= 6)
-			fv = atof(argv[5]);
+			type = atoi(argv[5]);
 
 		cout << fixed;
 		cout.precision(2);
-		cout << "PV " << PresentValue(rate, nper, pmt, fv, type) << endl;
+		cout << PresentValue(rate, nper, pmt, fv, type) << endl;
 		return 0;
 	}
 	else

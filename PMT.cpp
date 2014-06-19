@@ -1,4 +1,4 @@
-#include "FutureValue.h"
+#include "Payment.h"
 #include <string.h>
 
 void PrintUsage(char *name)
@@ -12,19 +12,19 @@ int main(int argc, char *argv[])
 	{
 		double rate = atof(argv[1]);
 		int nper = atoi(argv[2]);
-		double pmt = atof(argv[3]);
-		double pv = 0;
+		double pv = atof(argv[3]);
+		double fv = 0;
 		int type = DueAtEnd;
 
 		if (argc >= 5)
-			pv = atof(argv[4]);
+			fv = atof(argv[4]);
 
 		if (argc >= 6)
 			type = atoi(argv[5]);
 
 		cout << fixed;
 		cout.precision(2);
-		cout << FutureValue(rate, nper, pmt, pv, type) << endl;
+		cout << Payment(rate, nper, pv, fv, type) << endl;
 		return 0;
 	}
 	else
