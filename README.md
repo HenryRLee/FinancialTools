@@ -1,4 +1,4 @@
-FinacialTools
+FinancialTools
 =============
 
-Tools for finacial analysis
+Tools for financial analysis
